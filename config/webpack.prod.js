@@ -9,6 +9,7 @@ module.exports = merge(common, {
   output: {
     path: path.resolve(__dirname, '../dist'),
     publicPath: '/',
+    
     filename: 'js/[name].[contenthash].bundle.js'
   },
   plugins: [new CleanWebpackPlugin()],
