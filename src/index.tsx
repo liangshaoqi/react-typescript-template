@@ -10,7 +10,7 @@ const Test = () => {
   return (
     <div className='test'>
       <div>
-        <div>Freeplane</div>
+        <div>Freeplsane</div>
       </div>
     </div>
   )
