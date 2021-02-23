@@ -55,10 +55,13 @@ module.exports = {
             options: {
               presets: [
                 '@babel/preset-react',
-                ['@babel/preset-env', {
-                  useBuiltIns: 'usage',
-                  corejs: 3
-                }],
+                [
+                  '@babel/preset-env',
+                  {
+                    useBuiltIns: 'usage',
+                    corejs: 3
+                  }
+                ],
                 '@babel/preset-typescript'
               ]
             }
@@ -74,15 +77,15 @@ module.exports = {
             loader: 'url-loader',
             options: {
               limit: 8192,
-              name: 'images/[name]-[hash:8].[ext]',
-            },
-          },
-        ],
+              name: 'images/[name]-[hash:8].[ext]'
+            }
+          }
+        ]
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: ['file-loader'],
-      },
+        use: ['file-loader']
+      }
     ]
   },
   resolve: {
@@ -98,7 +101,7 @@ module.exports = {
       '@reducers': path.resolve(__dirname, '../src/reducers/'),
       '@models': path.resolve(__dirname, '../src/models/'),
       '@pages': path.resolve(__dirname, '../src/pages/'),
-      '@request': path.resolve(__dirname, '../src/request/'),
+      '@request': path.resolve(__dirname, '../src/request/')
     }
   }
 }
